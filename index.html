@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="Time">
+            <h1 class = "time" id = "hour">00</h1>
+            <p class = "time1">:</p>
+            <h1 class="time" id = "minute">00</h1>
+            <p class = "time1">:</p>
+            <h1 class="time" id = "second">00</h1>
+            <p class = "time1">:</p>
+            <h1 class="time" id ="millisecond">00</h1>
+          
+        </div>
+        <div class="buttons">
+            <button type="" class = "but" id = "left_button">Lap</button>
+            <button type="" class="but" id = "right_button">Start</button>
+        </div>
+        <ul id="list">
+          <!--   <li class = "lis"><h3 class= "head">Lap1</h3> <span class= "head">39229</span></li>
+            <li class = "lis"><h3>Lap1</h3> <span>39229</span></li>
+            <li class = "lis">
+                <h3>Lap1</h3> <span>39229</span>
+            </li>
+ -->
+            
+        </ul>
+        <div class="arrow">
+            <i class="fa-solid fa-circle-down Down_Arrow" id="arrow_button" style="display: none;"></i>
+            <i class="fa-solid fa-circle-up Down_Arrow" id="arrow_button_up" style="display: none;"></i>
+        
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

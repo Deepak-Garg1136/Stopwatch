@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Baskerville", serif;
+}
+
+body {
+  background-image: url(images/stop.jpg);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  /*  background-color: aliceblue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 40px;
+  margin-top: 10vh;
+  width: 50vw;
+  height: 80vh;
+  /* opacity: .1; */
+}
+
+.Time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  margin-top: 6vh;
+}
+
+.time {
+  /* opacity: 1 !important; */
+  /* color :rgb(247, 108, 58); */
+  width: 5vw;
+  color: rgb(250, 85, 19);
+  font-size: 8vh;
+  text-align: center;
+}
+
+.Time p {
+  color: rgb(250, 85, 19);
+  padding-bottom: 10px;
+  font-size: 8vh;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-between;
+  /* background-color:blue; */
+  width: 50vw;
+  margin-top: 7vh;
+  height: 20vh;
+}
+
+.but {
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  margin: auto;
+  color: rgb(250, 85, 19);
+  font-size: 20px;
+  font-weight: 900;
+  /*     text-shadow: 0 0 1em rgb(235, 73, 8), 0 0 0.2em rgb(206, 112, 74);  */
+  text-shadow: rgb(238, 85, 25) 1px 0 10px;
+  box-shadow: 0 0 20px 10px rgb(250, 85, 19);
+  /*    box-shadow: 0 0 20px 10px black; */
+  background-color: black;
+}
+
+.but:hover {
+  /* box-shadow: 0 0 20px 10px rgb(250, 85, 19); */
+  background-color: rgb(250, 85, 19);
+  color: black;
+  text-shadow: black 1px 0 10px;
+  box-shadow: 0 0 20px 10px rgb(250, 85, 19);
+  border: 2px solid rgb(250, 85, 19);
+  font-weight: bolder;
+}
+
+#list {
+  width: 30vw;
+}
+
+#list li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(250, 85, 19);
+  margin-top: 15px;
+}
+
+#list h3,
+#list span {
+  margin-top: 20px;
+  padding-left: 15px;
+  padding-right: 12px;
+  padding-bottom: 10px;
+  color: rgb(250, 85, 19);
+  font-weight: 900;
+  /*     text-shadow: 0 0 1em rgb(235, 73, 8), 0 0 0.2em rgb(206, 112, 74);  */
+  text-shadow: rgb(238, 85, 25) 1px 0 10px;
+}
+
+#list {
+  max-height: 31vh;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+}
+
+.Down_Arrow {
+  cursor: pointer;
+  color: rgb(250, 85, 19);
+  margin: 10px;
+  margin-bottom: 0px;
+  font-size: 35px;
+}
+
+.Down_Arrow:hover {
+  color: rgb(250, 85, 19);
+  border-radius: 50%;
+  background: black;
+  box-shadow: 0 0 20px 10px rgb(238, 85, 25);
+}
+
+/* For tablets and small desktops */
+@media (max-width: 1024px) {
+  .container {
+    width: 90vw;
+    height: auto;
+    margin-top: 5vh;
+    align-items: center;
+  }
+
+  .Time {
+    width: 80vw;
+    gap: 2vh;
+    align-items: center;
+  }
+
+  .time {
+    font-size: 10vh;
+    width: 7vw;
+  }
+  .time1 {
+    font-size: 10vh;
+    margin-top: 1vh;
+  }
+
+  .buttons {
+    width: 50vw;
+    height: auto;
+    margin-top: 10vh;
+  }
+
+  .but {
+    height: 100px;
+    width: 100px;
+    font-size: 18px;
+  }
+
+  #list {
+    width: 50vw;
+  }
+}
+
+/* For mobile devices (landscape mode) */
+@media (max-width: 768px) {
+  .container {
+    width: 80vw;
+    height: auto;
+    margin-top: 5vh;
+  }
+
+  .Time {
+    width: 100vw;
+    gap: 2vh;
+    align-items: center;
+  }
+
+  .time {
+    font-size: 8vh;
+    width: 8vw;
+  }
+  .time1 {
+    font-size: 8vh;
+    margin-top: 1vh;
+  }
+
+  .buttons {
+    width: 70vw;
+    height: auto;
+    margin-top: 12vh;
+  }
+
+  .but {
+    height: 80px;
+    width: 80px;
+    font-size: 18px;
+  }
+
+  #list {
+    width: 50vw;
+  }
+}
+
+/* For mobile devices (portrait mode) */
+@media (max-width: 480px) {
+  /* .container {
+    width: 90vw;
+    height: auto;
+    margin-top: 5vh;
+  }
+
+  .Time {
+    width: 90vw;
+  }*/
+
+  .time {
+    font-size: 7vh;
+    width: 9vw;
+  }
+  .time1 {
+    font-size: 7vh;
+    margin-top: 0.5vh;
+  }
+
+  .buttons {
+    width: 80vw;
+    height: auto;
+    margin-top: 8vh;
+    /* flex-direction: column; */
+  }
+  /* 
+  .but {
+    height: 70px;
+    width: 70px;
+    font-size: 14px;
+  }
+
+  #list {
+    width: 80vw;
+  } */
+}
+
+/* For small mobile devices */
+@media (max-width: 370px) {
+  .container {
+    width: 95vw;
+    height: auto;
+  }
+
+  .time {
+    font-size: 6vh;
+    width: 11vw;
+  }
+  .time1 {
+    font-size: 5vh;
+    margin-top: 1vh;
+  }
+  .buttons {
+    width: 95vw;
+    height: auto;
+    margin-top: 8vh;
+    /* flex-direction: column; */
+  }
+
+  .but {
+    height: 70px;
+    width: 70px;
+    font-size: 12px;
+  }
+
+  #list {
+    width: 90vw;
+  }
+}
