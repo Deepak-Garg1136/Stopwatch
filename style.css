@@ -293,10 +293,11 @@ body {
 @media (max-width: 210px) {
   .Time {
     align-items: center;
+    justify-content: center;
   }
   .time {
     font-size: 4vh;
-    width: 13vw;
+    width: 14.5vw;
   }
   .time1 {
     font-size: 4vh !important;
