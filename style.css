@@ -264,13 +264,13 @@ body {
     gap: 5px;
   }
   .time {
-    font-size: 5vh;
+    font-size: 5.5vh;
     width: 12vw;
   }
   .time1 {
-    margin-left: 5px;
+    margin-left: 8px;
     font-size: 4vh !important;
-    margin-top: 1vh;
+    margin-top: 0.5vh;
   }
   .buttons {
     width: 95vw;
@@ -297,12 +297,11 @@ body {
   }
   .time {
     font-size: 4vh;
-    width: 14.5vw;
+    width: 13vw;
   }
   .time1 {
     font-size: 4vh !important;
-    margin-top: 0.5vh;
-    margin-left : 8px
+    margin-top: 1vh;
   }
   .buttons {
     width: 95vw;
