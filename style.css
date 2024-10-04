@@ -258,17 +258,48 @@ body {
 
 /* For small mobile devices */
 @media (max-width: 370px) {
-  .container {
-    width: 95vw;
-    height: auto;
+  .Time {
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
   }
-
   .time {
-    font-size: 6vh;
-    width: 11vw;
+    font-size: 5vh;
+    width: 12vw;
   }
   .time1 {
-    font-size: 5vh;
+    margin-left: 5px;
+    font-size: 4vh !important;
+    margin-top: 1vh;
+  }
+  .buttons {
+    width: 95vw;
+    height: auto;
+    margin-top: 8vh !important;
+    /* flex-direction: column; */
+  }
+
+  .but {
+    height: 70px;
+    width: 70px;
+    font-size: 12px;
+  }
+
+  #list {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 210px) {
+  .Time {
+    align-items: center;
+  }
+  .time {
+    font-size: 4vh;
+    width: 13vw;
+  }
+  .time1 {
+    font-size: 4vh !important;
     margin-top: 1vh;
   }
   .buttons {
